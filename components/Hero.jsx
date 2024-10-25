@@ -3,7 +3,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from "react-scroll";
 
-// components 
+// components
 import RotatingShape from "./RotatingShape";
 import Header from "./Header";
 
@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className="h-[800px] relative bg-accent/10 xl:bg-white">
       {/* header */}
-      <Header/>
+      <Header />
       <div className="container mx-auto h-full">
         <div className="relative z-20 h-full w-full xl:max-w-[768px] flex flex-col items-center xl:items-start justify-center text-center xl:text-left pt-10">
           <h1 className="h1 mb-2 max-w-[320px] xl:max-w-none">
@@ -27,8 +27,8 @@ const Hero = () => {
             />
           </h1>
           <p className="lead max-w-[476px] mb-7">
-            Delivering Powerful, custom websites that blends aesthetics with
-            performance
+            Delivering Powerful, custom websites that blend aesthetics with
+            performance.
           </p>
           <ScrollLink to="contact" smooth>
             <button className="btn btn-accent mb-8">Contact Me</button>
@@ -45,6 +45,7 @@ const Hero = () => {
               quality="100"
               priority
               className="object-contain"
+              alt="Developer working on a project" // Add alt text
             />
           </div>
           {/* arrow shape */}
@@ -53,18 +54,18 @@ const Hero = () => {
               src="/assets/hero/arrow.svg"
               width={160}
               height={160}
-              alt=""
+              alt="Arrow pointing down" // Add alt text
             />
           </div>
           {/* shape */}
-          <div className="absolute top-[600px] left-[3vw]"> 
+          <div className="absolute top-[600px] left-[3vw]">
             <RotatingShape
               content={
                 <Image
-                  src="assets/hero/shape-1.svg"
+                  src="/assets/hero/shape-1.svg" // Corrected path
                   width={38}
                   height={38}
-                  alt=""
+                  alt="Rotating shape 1" // Add alt text
                 />
               }
               direction="left"
@@ -72,14 +73,14 @@ const Hero = () => {
             />
           </div>
           {/* shape 2 */}
-          <div className="absolute top-[240px] xl:left-[30vw]"> 
+          <div className="absolute top-[240px] xl:left-[30vw]">
             <RotatingShape
               content={
                 <Image
-                  src="assets/hero/shape-2.svg"
+                  src="/assets/hero/shape-2.svg" // Corrected path
                   width={34}
                   height={34}
-                  alt=""
+                  alt="Rotating shape 2" // Add alt text
                 />
               }
               direction="right"
@@ -87,14 +88,14 @@ const Hero = () => {
             />
           </div>
           {/* shape 3 */}
-          <div className="absolute top-[480px] xl:left-[40vw]"> 
+          <div className="absolute top-[480px] xl:left-[40vw]">
             <RotatingShape
               content={
                 <Image
-                  src="assets/hero/shape-3.svg"
+                  src="/assets/hero/shape-3.svg" // Corrected path
                   width={36}
                   height={36}
-                  alt=""
+                  alt="Rotating shape 3" // Add alt text
                 />
               }
               direction="left"

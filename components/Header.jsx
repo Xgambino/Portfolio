@@ -11,16 +11,19 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-4 lg:justify-between">
           {/* logo  */}
-          <Logo  />
+          <Logo />
           <div className="flex items-center gap-12">
             {/* nav & socials  */}
-          <Nav
-            containerStyles="hidden xl:flex"
-            listStyles="flex gap-6"
-            linkStyles="text-primary font-primary text-lg tracking-[1.4px] transition-all duration-300 cursor-pointer"
-          />
+            <Nav
+              containerStyles="hidden xl:flex"
+              listStyles="flex gap-6"
+              linkStyles="text-primary font-primary text-lg tracking-[1.4px] transition-all duration-300 cursor-pointer"
+            />
           </div>
-          <Socials/>
+          <Socials
+            containerStyles="flex items-center gap-2"
+            iconStyles="text-base w-[32px] h-[32px] bg-primary text-white flex items-center justify-center rounded-full"
+          />
         </div>
       </div>
     </header>
