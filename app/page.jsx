@@ -6,7 +6,7 @@ import Hero from "@/components/Hero";
 import Journey from "@/components/Journey";
 import Services from "@/components/Services";
 import Work from "@/components/Work";
-
+import FixedMenu from "@/components/FixedMenu";
 
 const Home = () => {
   // implement locomotive scroll
@@ -15,10 +15,12 @@ const Home = () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       new LocomotiveScroll();
     };
-  },  []);
+    loadLocomotiveScroll();
+  }, []);
   return (
-    <div>
+    <>
       <Hero />
+      <FixedMenu/>
       <Services />
       <About />
       <Journey />
@@ -26,7 +28,7 @@ const Home = () => {
       <Contact />
       {/* temporary div  */}
       <div className="h-[3000px]"></div>
-    </div>
+    </>
   );
 };
 
