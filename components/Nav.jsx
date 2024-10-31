@@ -1,5 +1,6 @@
 "use client";
 import { Link as ScrollLink } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const links = [
   {
